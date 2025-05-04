@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Score</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Study Score</h2>
+        <form class="form-group">
+            <div class="input-group">
+                <label for="name">Name:</label>
+                <select name="name" id="name" required>
+                    <option value="">Choose a name</option>
+                    <option value="Rohit Pr">Rohit Pr</option>
+                    <option value="Amit Pr">Amit Pr</option>
+                    <option value="Ys Yashvir">Ys Yashvir</option>
+                    <option value="Ujjwal Pr">Ujjwal Pr</option>
+                    <option value="Shwet Pr">Shwet Pr</option>
+                    <option value="Shashwat Pr">Shashwat Pr</option>
+                    <option value="Sachin Pr">Sachin Pr</option>
+                    <option value="Shivam S Pr">Shivam S Pr</option>
+                    <option value="Shivam Y Pr">Shivam Y Pr</option>
+                    <option value="Satyam Pr">Satyam Pr</option>
+                </select>
+            </div>
+            <div class="input-group">
+                <label for="score">Score:</label>
+                <input type="number" name="score" id="score" placeholder="Enter study score(in hours)" required min="0" max="100" step="0.1">
+            </div>
+            <button type="submit">Submit Score</button>
+        </form>
+
+        <table class="score-table">
+            <thead>
+                <tr>
+                    <th>Date</th>
+                    <th>Name</th>
+                    <th>Study Score</th>
+                </tr>
+            </thead>
+            <tbody id="scoreTableBody">
+                <!-- Table rows will be added dynamically -->
+            </tbody>
+        </table>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
